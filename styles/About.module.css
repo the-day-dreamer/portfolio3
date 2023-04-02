@@ -1,0 +1,94 @@
+.aboutTitle{
+    width: 100%;
+    height: 60vh;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--bodyFont);
+    font-size: 6rem;
+    font-weight: 600;
+}
+.biography{
+    height: 120vh;
+    width: 85%;
+    
+    margin: auto;
+    display: flex;
+}
+.biography1{
+    
+    height: 100%;
+    width: 33%;
+}
+.biography2{
+    height: 100%;
+    width: 40%;
+}
+.biography3{
+    
+    height: 100%;
+    width: 26%;
+}
+.bioBody1{
+    margin-top: 2vh;
+    font-family: var(--bodyFont);
+}
+.bioBody2{
+    margin-top: 2vh;
+    font-family: var(--bodyFont);
+
+}
+.bioBody3{
+    margin-top: 2vh;
+    font-family: var(--bodyFont);
+
+}
+.bioTitle{
+    font-size: 1.2rem;
+    font-family: var(--bodyFont);
+    font-weight: 600;
+}
+.bioBody1 > span{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.imageContainer{
+    width: 80%;
+    height: 60%;
+    border: 1px solid #000;
+    margin: auto;
+    box-shadow: 10px 10px #000;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imageBox{
+    width: 90%;
+    height: 90%;
+    border: 1px solid #000;
+    
+}
+.image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.num1{
+    height: 33%;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.number{
+    font-size: 6rem;
+    font-family: var(--bodyFont);
+    font-weight: 600;
+}
+.numText{
+    font-size: 1.4rem;
+    font-family: var(--bodyFont);
+}
