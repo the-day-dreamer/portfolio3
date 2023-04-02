@@ -22,7 +22,7 @@ const Aman = () => {
         <div className={styles.home}>
             <div className={styles.homeLeft}>
                 <div className={styles.imageBox}>
-                    <Image src={developer} className={styles.developer}/>
+                    <Image src={developer} alt='developer' className={styles.developer}/>
                 </div>
             </div>
             <div className={styles.homeRight}>

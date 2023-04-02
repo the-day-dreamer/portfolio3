@@ -62,20 +62,20 @@ const About = () => {
                         <div className={styles.biography1}>
                             <div className={styles.bioTitle}>BIOGRAPHY</div>
                             <div className={styles.bioBody1}>
-                                Hi, I'm <span>Aman</span>, a web developer and UI/UX designer with a passion for creating beautiful, functional, and user-centered digital experiences. With 4 years of experience in the field. I am always looking for new and innovative ways to bring my clients' visions to life.
+                                Hi, I m <span>Aman</span>, a web developer and UI/UX designer with a passion for creating beautiful, functional, and user-centered digital experiences. With 4 years of experience in the field. I am always looking for new and innovative ways to bring my clients' visions to life.
                             </div>
                             <div className={styles.bioBody2}>
                                 I believe that design is about more than just making things look pretty – it's about solving problems and creating intuitive, enjoyable experiences for users.
                             </div>
                             <div className={styles.bioBody3}>
-                                Whether I'm working on a website, mobile app, or other digital product, I bring my commitment to design excellence and user-centered thinking to every project I work on. I look forward to the opportunity to bring my skills and passion to your next project.
+                                Whether I m working on a website, mobile app, or other digital product, I bring my commitment to design excellence and user-centered thinking to every project I work on. I look forward to the opportunity to bring my skills and passion to your next project.
                             </div>
 
                         </div>
                         <div className={styles.biography2}>
                             <div className={styles.imageContainer}>
                                 <div className={styles.imageBox}>
-                                    <Image src={man} className={styles.image} />
+                                    <Image src={man} alt='man' className={styles.image} />
                                 </div>
                             </div>
                         </div>
