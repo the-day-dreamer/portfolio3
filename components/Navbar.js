@@ -20,7 +20,7 @@ const Navbar = () => {
             <div className={styles.navbarMiddle}>
                 <motion.div className={styles.logo}
                 whileHover={{
-                    color : ['#34e7e4' , '#ef5777' , '#ff5e57'],
+                    color : ['#34e7e4' , '#ef5777' , '#ff5e57' , '#ffd32a' , '#c56cf0' , '#32ff7e'],
                     transition :{duration : 1 , repeat : Infinity}
 
                 }}
