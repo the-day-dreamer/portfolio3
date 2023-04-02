@@ -4,7 +4,8 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Navbar from '@/components/Navbar'
 import Aman from '@/components/Aman'
-
+import Footer from '@/components/Footer'
+import { motion } from 'framer-motion'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -19,6 +20,11 @@ export default function Home() {
       <main className={styles.main}>
         <Navbar/>
         <Aman/>
+        <Footer/>
+        <motion.div className={styles.hire}
+        animate = {{color : ['#34e7e4' , '#ef5777' , '#ff5e57' , '#ffd32a' , '#c56cf0' , '#32ff7e']}}
+        transition={{repeat : Infinity , duration : 1}}
+        >Hire me</motion.div>
       </main>
     </>
   )

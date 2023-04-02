@@ -1,0 +1,15 @@
+.hire{
+    width: 15vh;
+    height: 15vh;
+    color:#fff;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 2vh;
+    left: 2vh;
+    font-family: var(--bodyFont);
+    cursor: pointer;
+}
