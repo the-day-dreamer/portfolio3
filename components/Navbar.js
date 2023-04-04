@@ -7,15 +7,32 @@ import Instagram from './Instagram';
 import Dribbble from './Dribbble';
 import Github from './Github';
 import Linkedin from './Linkedin';
-const Navbar = () => {
+import Sun from './Sun';
+import Moon from './Moon';
+
+import { useState } from 'react';
+
+const Navbar = ({pullData}) => {
     const router = useRouter()
+    const [lightMode , setLightMode] = useState(true)
+    const handleChange = ()=>{
+        if(lightMode === true){
+            setLightMode(false)
+        }
+        else{
+            setLightMode(true)
+        }
+        // console.log(lightMode)
+    }
+    pullData(lightMode)
+    
     return ( 
-        <div className={styles.navbar}>
+        <div className={lightMode ? `${styles.navbar}` : `${styles.darkNavbar}`}>
             <div className={styles.navbarLeft}>
-                <div className={styles.link}><Link href='/'>Home</Link></div>
-                <div className={styles.link}><Link href='/about'>About</Link></div>
-                <div className={styles.link}><Link href='/projects'>Projects</Link></div>
-                <div className={styles.link}><Link href='/articles'>Articles</Link></div>
+                <div className={lightMode ? `${styles.link}` : `${styles.darkLink}`}><Link href='/'>Home</Link></div>
+                <div className={lightMode ? `${styles.link}` : `${styles.darkLink}`}><Link href='/about'>About</Link></div>
+                <div className={lightMode ? `${styles.link}` : `${styles.darkLink}`}><Link href='/projects'>Projects</Link></div>
+                <div className={lightMode ? `${styles.link}` : `${styles.darkLink}`}><Link href='/articles'>Articles</Link></div>
             </div>
             <div className={styles.navbarMiddle}>
                 <motion.div className={styles.logo}
@@ -32,7 +49,7 @@ const Navbar = () => {
                 <div className={styles.icons}><Link href='https://dribbble.com/Aman1324' target='_blank'><Dribbble/></Link></div>
                 <div className={styles.icons}><Link href='https://github.com/the-day-dreamer' target='_blank'><Github/></Link></div>
                 <div className={styles.icons}><Link href='https://www.linkedin.com/in/aman-raj-028802238/' target='_blank'><Linkedin/></Link></div>
-                
+                <div className={styles.icons} onClick={handleChange}>{lightMode ? <Sun/> : <Moon/>}</div>
             </div>
         </div>
         

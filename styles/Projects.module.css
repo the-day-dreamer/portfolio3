@@ -180,3 +180,32 @@
     font-size: 1.2rem;
     font-family: var(--bodyFont);
 }
+.darkProjects{
+    color: #fff;
+    background-color: #000;
+}
+.darkCard1{
+    width: 100%;
+    height: 60vh;
+    border: 1px solid #fff;
+    box-shadow: 10px 10px #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+}
+.darkCard2{
+    width: 45%;
+    height: 100%;
+    border: 1px solid #fff;
+    box-shadow: 10px 10px #fff;
+    border-radius: 10px;
+}
+.darkCard3{
+    width: 45%;
+    height: 100%;
+    border: 1px solid #fff;
+    box-shadow: 10px 10px #fff;
+    border-radius: 10px;
+}

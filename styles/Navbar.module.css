@@ -2,7 +2,6 @@
     font-family: var(--bodyFont);
     width: 100%;
     height: 10vh;
-    
     display: flex;
 }
 .navbarLeft{
@@ -39,11 +38,25 @@
     justify-content: center;
     color: #fff;
     cursor: pointer;
+    border: 1px solid #fff;
 }
 .icons{
     width: 6vh;
     height: 6vh;
+    cursor: pointer;
 }
 .link >a{
     color: #000;
+}
+.darkLink >a{
+    color: #fff;
+
+}
+.darkNavbar{
+    font-family: var(--bodyFont);
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    background-color: #000;
+    color: #fff;
 }

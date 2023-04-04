@@ -10,6 +10,7 @@ import { motion } from 'framer-motion'
 import portfolio1 from '../public/portfolio1.png'
 import joker from '../public/joker.png'
 import portfolio2 from '../public/portfolio2.png'
+import { useState } from 'react';
 const variant = {
     initial : {
         opacity : 0
@@ -22,6 +23,10 @@ const variant = {
     }
 }
 const Projects = () => {
+    const [lightMode , setLightMode] = useState(true)
+  const pullData = (data)=>{
+    setLightMode(data)
+  }
     return ( 
         <>
             <Head>
@@ -30,8 +35,8 @@ const Projects = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className={styles.projects}>
-                <Navbar/>
+            <main className={lightMode ? `${styles.projects}` : `${styles.darkProjects}`}>
+                <Navbar pullData={pullData}/>
                 <motion.div className={styles.projectsTitle} 
                 variants={variant}
                 initial = "initial"
@@ -39,11 +44,11 @@ const Projects = () => {
                 >
                     <div className={styles.titleText}>Imagination</div>
                     <div className={styles.titleText}>trumps</div>
-                    <div className={styles.titleText}>Knowledge</div>
+                    <div className={styles.titleText}>Knowledge!</div>
 
                 </motion.div>
                 <div className={styles.projectsDetails}>
-                    <div className={styles.card1}>
+                    <div className={lightMode ? `${styles.card1}` : `${styles.darkCard1}`}>
                         <div className={styles.cardBox}>
                             <div className={styles.imageBox}>
                                 <motion.div className={styles.imageBox1}
@@ -67,7 +72,7 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className={styles.cardContainer}>
-                        <div className={styles.card2}>
+                        <div className={lightMode ? `${styles.card2}` : `${styles.darkCard2}`}>
                             <div className={styles.cardImage}>
                                 <motion.div className={styles.cardImageBox}
                                 whileHover={{
@@ -85,7 +90,7 @@ const Projects = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className={styles.card3}>
+                        <div className={lightMode ? `${styles.card3}` : `${styles.darkCard3}`}>
                         <div className={styles.cardImage}>
                                 <motion.div className={styles.cardImageBox}
                                 whileHover={{
@@ -105,7 +110,7 @@ const Projects = () => {
                         </div>
 
                     </div>
-                    <div className={styles.card1}>
+                    <div className={lightMode ? `${styles.card1}` : `${styles.darkCard1}`}>
                         <div className={styles.cardBox}>
                             <div className={styles.imageBox}>
                                 <motion.div className={styles.imageBox1}

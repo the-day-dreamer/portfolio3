@@ -13,13 +13,13 @@ const Skill=({name , x , y})=>{
     </motion.span>
     )
 }
-const Skills = () => {
+const Skills = ({lightMode , setLightMode}) => {
     return ( 
         <div className={styles.skills}>
             <div className={styles.skillsTitle}>
                 Skills
             </div>
-            <div className={styles.skillsBody}>
+            <div className={lightMode ? `${styles.skillsBody}` : `${styles.darkSkillsBody}`}>
                 <motion.span className={styles.skillsText}
                 whileHover={{scale : 1.05}}
                 >Web</motion.span>

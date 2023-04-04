@@ -16,10 +16,10 @@ const quote ={
         }
     }
 }
-const Aman = () => {
+const Aman = ({lightMode , setLightMode}) => {
     
     return ( 
-        <div className={styles.home}>
+        <div className={lightMode ? `${styles.home}` : `${styles.darkHome}`}>
             <div className={styles.homeLeft}>
                 <div className={styles.imageBox}>
                     <Image src={developer} alt='developer' className={styles.developer}/>

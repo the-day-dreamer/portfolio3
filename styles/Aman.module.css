@@ -90,3 +90,10 @@
 .link:hover{
     color: #000;
 }
+.darkHome{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    color: #fff;
+    background-color: #000;
+}

@@ -38,4 +38,14 @@
     border-radius: 20px;
     font-family: var(--bodyFont);
     position: absolute;
+    border: 1px solid #fff;
+}
+.darkSkillsBody{
+    background: repeating-radial-gradient(rgba(252, 249, 249, 0.749) 2px ,#000 5px , #000 100px);
+    height: 70vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

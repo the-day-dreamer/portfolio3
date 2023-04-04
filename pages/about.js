@@ -9,6 +9,7 @@ import Image from 'next/image';
 import { useEffect, useRef } from 'react';
 import Skills from '@/components/Skills';
 import Education from '@/components/Education';
+import { useState } from 'react';
 const passion = {
     initial: {
         opacity: 0
@@ -42,6 +43,11 @@ const AnimatedNumbers = ({ value }) => {
     return <div className={styles.number} ref={ref}></div>
 }
 const About = () => {
+    const [lightMode , setLightMode] = useState(true)
+    const pullData = (data)=>{
+    setLightMode(data)
+  
+  }
     return (
         <>
             <Head>
@@ -50,8 +56,8 @@ const About = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className={styles.about}>
-                <Navbar />
+            <main className={lightMode ? `${styles.about}` : `${styles.darkAbout}`}>
+                <Navbar pullData={pullData}/>
                 <div className={styles.aboutPage}>
                     <motion.div className={styles.aboutTitle}
                         variants={passion}
@@ -99,7 +105,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <Skills/>
+                <Skills lightMode = {lightMode} setLightMode = {setLightMode}/>
                 <Experience/>
                 <Education/>
                 <Footer />

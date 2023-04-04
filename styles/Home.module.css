@@ -12,4 +12,5 @@
     left: 2vh;
     font-family: var(--bodyFont);
     cursor: pointer;
+    border: 1px solid #fff;
 }

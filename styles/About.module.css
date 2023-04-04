@@ -92,3 +92,7 @@
     font-size: 1.4rem;
     font-family: var(--bodyFont);
 }
+.darkAbout{
+    color: #fff;
+    background-color: #000;
+}
