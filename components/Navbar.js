@@ -12,10 +12,10 @@ const Navbar = () => {
     return ( 
         <div className={styles.navbar}>
             <div className={styles.navbarLeft}>
-                <div><Link href='/'>Home</Link></div>
-                <div><Link href='/about'>About</Link></div>
-                <div><Link href='/projects'>Projects</Link></div>
-                <div><Link href='/articles'>Articles</Link></div>
+                <div className={styles.link}><Link href='/'>Home</Link></div>
+                <div className={styles.link}><Link href='/about'>About</Link></div>
+                <div className={styles.link}><Link href='/projects'>Projects</Link></div>
+                <div className={styles.link}><Link href='/articles'>Articles</Link></div>
             </div>
             <div className={styles.navbarMiddle}>
                 <motion.div className={styles.logo}

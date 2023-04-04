@@ -1,0 +1,182 @@
+.projectsTitle{
+    width: 100%;
+    height: 90vh;
+    
+    font-size: 7rem;
+    font-family: var(--bodyFont);
+    font-weight: 600;
+    
+}
+.titleText{
+    text-align: center;
+}
+.projectsDetails{
+    width: 80%;
+    height: 250vh;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+.card1{
+    width: 100%;
+    height: 60vh;
+    border: 1px solid black;
+    box-shadow: 10px 10px #000;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+}
+.cardBox{
+    width: 90%;
+    height: 80%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.imageBox{
+    height: 100%;
+    width: 45%;
+    /* border: 1px solid black; */
+    overflow: hidden;
+    cursor: pointer;
+}
+.textBox{
+    height: 100%;
+    width: 45%;
+    /* border: 1px solid black; */
+    font-family: var(--bodyFont);
+
+}
+.signIn{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.text1{
+    color: red;
+    font-size: 1.3rem;
+}
+.text2{
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-top: 2vh;
+}
+.text3{
+    margin-top: 2vh;
+
+}
+.icons{
+    width: 100%;
+    height: 10vh;
+    /* border: 1px solid red; */
+    margin-top: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+.github{
+    height: 8vh;
+    width: 8vh;
+    border-radius: 50%;
+}
+.button{
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    height: 8vh;
+    width: 10vw;
+    font-size: 1rem;
+    font-family: var(--bodyFont);
+    position: relative;
+    left: 1vw;
+}
+.button > a{
+    color: #fff;
+}
+.imageBox1{
+    height: 100%;
+    width: 100%;
+}
+.cardContainer{
+    width: 100%;
+    height: 80vh;
+    /* border: 1px solid red; */
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.card2{
+    width: 45%;
+    height: 100%;
+    border: 1px solid black;
+    box-shadow: 10px 10px #000;
+    border-radius: 10px;
+}
+.card3{
+    width: 45%;
+    height: 100%;
+    border: 1px solid black;
+    box-shadow: 10px 10px #000;
+    border-radius: 10px;
+
+}
+.cardImage{
+    width: 90%;
+    height: 50%;
+    margin: auto;
+    margin-top: 4vh;
+    overflow: hidden;
+    border: 1px solid #000;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.cardImageBox{
+    width: 100%;
+    height: 100%;
+   
+}
+.portfolio1{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.cardText{
+    width: 90%;
+    height: 35%;
+    margin: auto;
+    margin-top: 4vh;
+    /* border: 1px solid red; */
+    padding-left:1vw;
+    font-family: var(--bodyFont);
+}
+.cardTextTitle{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.cardTextIcons{
+    height: 8vh;
+    width: 100%;
+    /* border: 1px solid red; */
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.githubIcon{
+    height: 8vh;
+    width: 8vh;
+}
+.visitText > a{
+    text-decoration: underline;
+    color: #000;
+    font-size: 1.2rem;
+    font-family: var(--bodyFont);
+}
