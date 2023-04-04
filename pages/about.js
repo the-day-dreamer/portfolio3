@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '@/styles/About.module.css'
 import Navbar from '@/components/Navbar';
+import Experience from '@/components/Experience'
 import Footer from '@/components/Footer';
 import { motion, useInView, useMotionValue, useSpring } from 'framer-motion'
 import man from '../public/man.jpg'
@@ -98,6 +99,7 @@ const About = () => {
                     </div>
                 </div>
                 <Skills/>
+                <Experience/>
                 <Footer />
             </main>
         </>
