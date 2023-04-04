@@ -8,6 +8,7 @@ import man from '../public/man.jpg'
 import Image from 'next/image';
 import { useEffect, useRef } from 'react';
 import Skills from '@/components/Skills';
+import Education from '@/components/Education';
 const passion = {
     initial: {
         opacity: 0
@@ -100,6 +101,7 @@ const About = () => {
                 </div>
                 <Skills/>
                 <Experience/>
+                <Education/>
                 <Footer />
             </main>
         </>
