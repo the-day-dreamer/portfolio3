@@ -83,7 +83,7 @@ const About = () => {
                         <div className={styles.biography2}>
                             <div className={styles.imageContainer}>
                                 <div className={styles.imageBox}>
-                                    <Image src={man} alt='man' className={styles.image} priority/>
+                                    <Image src={man} alt='man' className={styles.image} />
                                 </div>
                             </div>
                         </div>

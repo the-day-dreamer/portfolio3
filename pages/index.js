@@ -7,17 +7,12 @@ import Aman from '@/components/Aman'
 import Footer from '@/components/Footer'
 import { motion } from 'framer-motion'
 import { useState } from 'react'
-import Menu from '@/components/Menu'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   const [lightMode , setLightMode] = useState(true)
-  const [isOpen , setIsOpen] = useState(false)
     const pullData = (data)=>{
     setLightMode(data)
-  }
-  const pullData2 = (data2)=>{
-    setIsOpen(data2)
   }
   return (
     <>
@@ -28,14 +23,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <Navbar pullData = {pullData} pullData2 = {pullData2}/>
+        <Navbar pullData = {pullData}/>
         <Aman lightMode={lightMode} setLightMode = {setLightMode}/>
         <Footer lightMode={lightMode} setLightMode = {setLightMode}/>
         <motion.div className={styles.hire}
         animate = {{color : ['#34e7e4' , '#ef5777' , '#ff5e57' , '#ffd32a' , '#c56cf0' , '#32ff7e']}}
         transition={{repeat : Infinity , duration : 1}}
         >Hire me</motion.div>
-        { isOpen && <Menu/>}
       </main>
     </>
   )

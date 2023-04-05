@@ -55,7 +55,7 @@ const Projects = () => {
                                  whileHover={{
                                     scale : 1.1
                                  }}
-                                ><Image className={styles.signIn} src={signIn} alt='signIn' priority/></motion.div>
+                                ><Image className={styles.signIn} src={signIn} alt='signIn'/></motion.div>
                             </div>
                             <div className={styles.textBox}>
                                 <div className={styles.text1}>Featured Project</div>
@@ -79,7 +79,7 @@ const Projects = () => {
                                     scale : 1.1
                                 }}
                                 >
-                                    <Image src={portfolio1} alt='portfolio1' className={styles.portfolio1} priority/>
+                                    <Image src={portfolio1} alt='portfolio1' className={styles.portfolio1}/>
                                 </motion.div>
                             </div>
                             <div className={styles.cardText}>
@@ -97,7 +97,7 @@ const Projects = () => {
                                     scale : 1.1
                                 }}
                                 >
-                                    <Image src={joker} alt='portfolio1' className={styles.portfolio1} priority/>
+                                    <Image src={joker} alt='portfolio1' className={styles.portfolio1}/>
                                 </motion.div>
                             </div>
                             <div className={styles.cardText}>
@@ -117,7 +117,7 @@ const Projects = () => {
                                  whileHover={{
                                     scale : 1.1
                                  }}
-                                ><Image className={styles.signIn} src={portfolio2} alt='signIn' priority/></motion.div>
+                                ><Image className={styles.signIn} src={portfolio2} alt='signIn'/></motion.div>
                             </div>
                             <div className={styles.textBox}>
                                 <div className={styles.text1}>Featured Project</div>
