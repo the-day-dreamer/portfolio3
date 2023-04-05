@@ -9,11 +9,19 @@ import Github from './Github';
 import Linkedin from './Linkedin';
 import Sun from './Sun';
 import Moon from './Moon';
+import Hamburger from './Hamburger';
+import Close from './Close'
 
 import { useState } from 'react';
 
-const Navbar = ({pullData}) => {
+const Navbar = ({pullData , pullData2}) => {
     const router = useRouter()
+    const [isOpen , setIsOpen] = useState(false)
+    const handleMenu = ()=>{
+        setIsOpen(!isOpen)
+       
+    }
+    pullData2(isOpen)
     const [lightMode , setLightMode] = useState(true)
     const handleChange = ()=>{
         if(lightMode === true){
@@ -28,6 +36,9 @@ const Navbar = ({pullData}) => {
     
     return ( 
         <div className={lightMode ? `${styles.navbar}` : `${styles.darkNavbar}`}>
+            <div className={styles.hamburger} onClick={handleMenu}>
+            {isOpen ? <Close/> : <Hamburger/>}
+            </div>
             <div className={styles.navbarLeft}>
                 <div className={lightMode ? `${styles.link}` : `${styles.darkLink}`}><Link href='/'>Home</Link></div>
                 <div className={lightMode ? `${styles.link}` : `${styles.darkLink}`}><Link href='/about'>About</Link></div>

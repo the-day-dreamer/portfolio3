@@ -60,3 +60,28 @@
     background-color: #000;
     color: #fff;
 }
+.hamburger{
+    width: 6vh;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2vw;
+}
+@media only screen and (max-width: 1000px) {
+    .navbarLeft{
+        display: none;
+    }
+    .navbarRight{
+        display: none;
+    }
+    .navbarMiddle{
+        width: 80%;
+    }
+  }
+
+@media only screen and (min-width : 1000px){
+    .hamburger{
+        display: none;
+    }
+}

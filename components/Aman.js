@@ -22,7 +22,7 @@ const Aman = ({lightMode , setLightMode}) => {
         <div className={lightMode ? `${styles.home}` : `${styles.darkHome}`}>
             <div className={styles.homeLeft}>
                 <div className={styles.imageBox}>
-                    <Image src={developer} alt='developer' className={styles.developer}/>
+                    <Image src={developer} alt='developer' className={styles.developer} priority/>
                 </div>
             </div>
             <div className={styles.homeRight}>
