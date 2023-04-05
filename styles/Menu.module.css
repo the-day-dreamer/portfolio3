@@ -13,6 +13,15 @@
     width: 80%;
     height: 80%;
     border: 1px solid black;
+    
+}
+.menuUp{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    z-index: 20;
+    position: relative;
+
 }
 @media only screen and (min-width : 1000px){
     .menu{
